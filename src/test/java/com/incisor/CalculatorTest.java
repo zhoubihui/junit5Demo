@@ -1,11 +1,12 @@
 package com.incisor;
 
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
+import org.junit.platform.engine.TestEngine;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@TestMethodOrder(MethodOrderer.class)
 class CalculatorTest {
-
     @Test
     void add() {
         final int result01 = Calculator.add(4, 2);
